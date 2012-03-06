@@ -166,6 +166,12 @@
             android:title="@string/button_wake_title"
             settings:controller="com.evervolv.settings.inputmethod.VolumeKeyWakePreferenceController" />
 
+        <SwitchPreferenceCompat
+            android:key="volume_button_music_control"
+            android:title="@string/volbtn_music_controls_title"
+            android:summary="@string/volbtn_music_controls_summary"
+            settings:controller="com.evervolv.settings.inputmethod.VolumeSkipTrackPreferenceController" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
