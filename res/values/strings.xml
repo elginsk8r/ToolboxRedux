@@ -87,6 +87,7 @@
 
     <!-- Hardware key -->
     <string name="button_settings">Buttons</string>
+    <string name="capacitive_keys_title">Hardware buttons</string>
     <string name="home_key_title">Home button</string>
     <string name="back_key_title">Back button</string>
     <string name="menu_key_title">Menu button</string>
@@ -121,5 +122,9 @@
     <!-- Volume key music controls -->
     <string name="volbtn_music_controls_title">Control playback</string>
     <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
+
+    <!-- Navigation Bar -->
+    <string name="disable_navkeys_title">On-screen navigation bar</string>
+    <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
 
 </resources>
