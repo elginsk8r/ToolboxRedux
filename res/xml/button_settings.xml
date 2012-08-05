@@ -9,6 +9,19 @@
     android:title="@string/button_settings">
 
     <PreferenceCategory
+        android:key="capacitive_keys"
+        android:title="@string/capacitive_keys_title"
+        settings:controller="com.evervolv.settings.inputmethod.CapacitiveKeyPreferenceController" >
+
+        <SwitchPreferenceCompat
+            android:key="disable_nav_keys"
+            android:title="@string/disable_navkeys_title"
+            android:summary="@string/disable_navkeys_summary"
+            settings:controller="com.evervolv.settings.inputmethod.DisableNavigationBarController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="home_key"
         android:title="@string/home_key_title"
         settings:controller="com.evervolv.settings.inputmethod.HomeCategoryPreferenceController">
