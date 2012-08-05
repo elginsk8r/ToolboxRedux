@@ -30,4 +30,10 @@
         settings:controller="com.android.settings.gestures.NavigationSettingsContextualSearchController"
         settings:highlightableMenuKey="@string/menu_key_system" />
 
+    <SwitchPreferenceCompat
+        android:key="dev_force_show_navbar"
+        android:title="@string/disable_navkeys_title"
+        android:summary="@string/disable_navkeys_summary"
+        settings:controller="com.evervolv.toolbox.gestures.NavigationBarPreferenceController" />
+
 </PreferenceScreen>
