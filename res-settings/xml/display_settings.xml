@@ -180,6 +180,12 @@
             settings:controller="com.evervolv.settings.display.AntiFlickerPreferenceController"/>
 
         <SwitchPreferenceCompat
+            android:key="display_low_power"
+            android:title="@string/live_display_low_power_title"
+            android:summary="@string/live_display_low_power_summary"
+            settings:controller="com.evervolv.settings.display.DisplayLowPowerModeController"/>
+
+        <SwitchPreferenceCompat
             android:key="show_operator_name"
             android:title="@string/show_operator_name_title"
             android:summary="@string/show_operator_name_summary"/>
