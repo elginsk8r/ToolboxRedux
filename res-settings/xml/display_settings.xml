@@ -152,6 +152,14 @@
             android:title="@string/live_display_color_temperature_title"
             android:dialogTitle="@string/live_display_color_temperature_title"
             settings:controller="com.evervolv.toolbox.display.DisplayTemperaturePreferenceController"/>
+
+        <!-- RGB display color adjustments -->
+        <com.evervolv.toolbox.display.DisplayColorPreference
+            android:key="color_calibration"
+            android:title="@string/color_calibration_title"
+            android:dialogTitle="@string/color_calibration_title"
+            android:summary="@string/color_calibration_summary"
+            settings:controller="com.evervolv.toolbox.display.DisplayColorPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
