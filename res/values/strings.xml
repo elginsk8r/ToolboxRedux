@@ -163,4 +163,12 @@
     <string name="color_green_title">Green</string>
     <string name="color_blue_title">Blue</string>
 
+    <!-- Status bar - Battery meter style -->
+    <string name="status_bar_battery_style_title">Battery icon</string>
+    <string name="status_bar_battery_style_icon_portrait">System default</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+
 </resources>
