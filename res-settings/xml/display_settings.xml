@@ -188,6 +188,12 @@
             android:summary="@string/proximity_wake_summary"
             settings:controller="com.evervolv.settings.display.ProximityWakePreferenceController" />
 
+        <SwitchPreferenceCompat
+            android:key="high_touch_sensitivity_enable"
+            android:title="@string/high_touch_sensitivity_title"
+            android:summary="@string/high_touch_sensitivity_summary"
+            settings:controller="com.evervolv.settings.display.GloveModePreferenceController" />
+
         <ListPreference
             android:key="theme"
             android:title="@string/device_theme"

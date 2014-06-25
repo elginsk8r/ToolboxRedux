@@ -10,6 +10,8 @@
         android:sharedUserId="android.uid.system"
         coreApp="true">
 
+    <uses-permission android:name="evervolv.permission.HARDWARE_ABSTRACTION_ACCESS" />
+
     <original-package android:name="com.android.settings"/>
 
     <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
