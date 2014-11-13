@@ -18,5 +18,10 @@ class ButtonSettings : DashboardFragment() {
 
     companion object {
         private const val TAG = "ButtonSettings"
+
+        const val CATEGORY_HOME = "home"
+        const val CATEGORY_MENU = "menu"
+        const val CATEGORY_ASSIST = "assist"
+        const val CATEGORY_APPSWITCH = "app_switch"
     }
 }

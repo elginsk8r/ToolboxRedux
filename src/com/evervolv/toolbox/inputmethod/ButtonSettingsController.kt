@@ -7,7 +7,7 @@ package com.evervolv.toolbox.inputmethod
 
 import android.content.Context
 import com.android.settings.core.BasePreferenceController
-import evervolv.hardware.HardwareManager
+import com.evervolv.toolbox.utils.DeviceCapabilities
 
 class ButtonSettingsController(
     private val context: Context,
@@ -16,7 +16,11 @@ class ButtonSettingsController(
 
     override fun getAvailabilityStatus(): Int =
         AVAILABLE.takeIf {
-            HardwareManager.getInstance(mContext).isSupported(HardwareManager.FEATURE_KEY_SWAP)
+            DeviceCapabilities.hasKeySwap(mContext)
+            || DeviceCapabilities.hasHomeKey(mContext)
+            || DeviceCapabilities.hasMenuKey(mContext)
+            || DeviceCapabilities.hasAssistKey(mContext)
+            || DeviceCapabilities.hasAppSwitchKey(mContext)
         }?: UNSUPPORTED_ON_DEVICE
 }
 
