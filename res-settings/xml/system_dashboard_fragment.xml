@@ -36,6 +36,14 @@
         settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"/>
 
     <Preference
+        android:key="button_settings"
+        android:title="@string/button_settings"
+        android:icon="@drawable/ic_settings_buttons"
+        android:order="-252"
+        android:fragment="com.evervolv.settings.inputmethod.ButtonSettings"
+        settings:controller="com.evervolv.settings.inputmethod.ButtonSettingsController" />
+
+    <Preference
         android:key="status_bar_settings"
         android:title="@string/status_bar_title"
         android:icon="@drawable/ic_settings_statusbar"
