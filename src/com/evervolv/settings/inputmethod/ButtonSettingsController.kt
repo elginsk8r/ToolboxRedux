@@ -14,12 +14,14 @@ class ButtonSettingsController(
 ) : BasePreferenceController(context, key) {
 
     private val hasHomeKey = DeviceCapabilities.hasHomeKey(mContext)
+    private val hasBackKey = DeviceCapabilities.hasBackKey(mContext)
     private val hasMenuKey = DeviceCapabilities.hasMenuKey(mContext)
     private val hasAssistKey = DeviceCapabilities.hasAssistKey(mContext)
     private val hasAppSwitchKey = DeviceCapabilities.hasAppSwitchKey(mContext)
+    private val hasVolumeKeys = DeviceCapabilities.hasVolumeKeys(mContext)
 
     override fun getAvailabilityStatus(): Int =
-        if (hasHomeKey || hasMenuKey || hasAssistKey || hasAppSwitchKey) {
+        if (hasHomeKey || hasBackKey || hasMenuKey || hasAssistKey || hasAppSwitchKey || hasVolumeKeys) {
             AVAILABLE
         } else {
             UNSUPPORTED_ON_DEVICE
