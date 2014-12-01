@@ -25,6 +25,11 @@ class ButtonSettings : DashboardFragment() {
             ),
             CategoryPreferenceController(
                 context,
+                "back_key",
+                DeviceCapabilities.hasBackKey(context)
+            ),
+            CategoryPreferenceController(
+                context,
                 "menu_key",
                 DeviceCapabilities.hasMenuKey(context)
             ),
@@ -37,6 +42,11 @@ class ButtonSettings : DashboardFragment() {
                 context,
                 "app_switch_key",
                 DeviceCapabilities.hasAppSwitchKey(context)
+            ),
+            CategoryPreferenceController(
+                context,
+                "volume_keys",
+                DeviceCapabilities.hasVolumeKeys(context)
             ),
         )
 

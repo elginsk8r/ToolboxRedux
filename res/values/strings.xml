@@ -88,11 +88,14 @@
     <!-- Hardware key -->
     <string name="button_settings">Buttons</string>
     <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
     <string name="menu_key_title">Menu button</string>
     <string name="assist_key_title">Search button</string>
     <string name="appswitch_key_title">Recents button</string>
+    <string name="volume_keys_title">Volume buttons</string>
 
     <!-- Hardware key rebinding -->
+    <string name="button_wake_title">Wake device</string>
     <string name="short_press_title">Short press action</string>
     <string name="long_press_title">Long press action</string>
     <string name="double_tap_title">Double tap action</string>
