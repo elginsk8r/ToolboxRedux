@@ -18,9 +18,11 @@ class ButtonSettingsController(
         AVAILABLE.takeIf {
             DeviceCapabilities.hasKeySwap(mContext)
             || DeviceCapabilities.hasHomeKey(mContext)
+            || DeviceCapabilities.hasBackKey(mContext)
             || DeviceCapabilities.hasMenuKey(mContext)
             || DeviceCapabilities.hasAssistKey(mContext)
             || DeviceCapabilities.hasAppSwitchKey(mContext)
+            || DeviceCapabilities.hasVolumeKeys(mContext)
         }?: UNSUPPORTED_ON_DEVICE
 }
 

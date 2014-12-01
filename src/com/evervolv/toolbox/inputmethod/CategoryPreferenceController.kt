@@ -19,9 +19,11 @@ class CategoryPreferenceController(
     override fun getAvailabilityStatus(): Int =
         if (when (category) {
             ButtonSettings.CATEGORY_HOME -> DeviceCapabilities.hasHomeKey(mContext)
+            ButtonSettings.CATEGORY_BACK -> DeviceCapabilities.hasBackKey(mContext)
             ButtonSettings.CATEGORY_MENU -> DeviceCapabilities.hasMenuKey(mContext)
             ButtonSettings.CATEGORY_ASSIST -> DeviceCapabilities.hasAssistKey(mContext)
             ButtonSettings.CATEGORY_APPSWITCH -> DeviceCapabilities.hasAppSwitchKey(mContext)
+            ButtonSettings.CATEGORY_VOLUME -> DeviceCapabilities.hasVolumeKeys(mContext)
             else -> false
         }) {
             AVAILABLE
