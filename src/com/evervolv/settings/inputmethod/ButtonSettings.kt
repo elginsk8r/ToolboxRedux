@@ -19,8 +19,10 @@ class ButtonSettings : DashboardFragment() {
         private const val TAG = "ButtonSettings"
 
         const val CATEGORY_HOME = "home"
+        const val CATEGORY_BACK = "back"
         const val CATEGORY_MENU = "menu"
         const val CATEGORY_ASSIST = "assist"
         const val CATEGORY_APPSWITCH = "app_switch"
+        const val CATEGORY_VOLUME = "volume"
     }
 }
