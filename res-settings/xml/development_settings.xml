@@ -60,6 +60,12 @@
                 android:targetClass="com.android.settings.SetFullBackupPassword" />
         </Preference>
 
+        <SwitchPreferenceCompat
+            android:key="power_menu_advanced_restart"
+            android:title="@string/power_menu_advanced_restart_title"
+            android:summary="@string/power_menu_advanced_restart_summary"
+            settings:controller="com.evervolv.toolbox.development.AdvancedRebootController"/>
+
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="keep_screen_on"
             android:title="@string/keep_screen_on"

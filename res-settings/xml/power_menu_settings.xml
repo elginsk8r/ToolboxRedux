@@ -50,6 +50,42 @@
         settings:controller="com.android.settings.gestures.LongPressPowerSensitivityPreferenceController"
     />
 
+    <PreferenceCategory
+        android:key="power_menu_items"
+        android:title="@string/power_menu_items_title"
+        settings:controller="com.evervolv.toolbox.gestures.PowerMenuCategoryController">
+
+        <CheckBoxPreference
+            android:key="screenshot"
+            android:title="@string/power_menu_screenshot_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="airplane"
+            android:title="@string/power_menu_airplane_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="users"
+            android:title="@string/power_menu_users_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="bugreport"
+            android:title="@string/power_menu_bug_report_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="emergency"
+            android:title="@string/power_menu_emergency_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="devicecontrols"
+            android:title="@string/power_menu_devicecontrols_title"
+            settings:controller="com.evervolv.toolbox.gestures.PowerMenuActionController"/>
+    </PreferenceCategory>
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_menu_power_volume_up_hint"
         android:title="@string/power_menu_power_volume_up_hint"
