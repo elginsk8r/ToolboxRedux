@@ -22,5 +22,17 @@
 
         <uses-library android:name="org.apache.http.legacy" />
 
+        <activity android:name="com.evervolv.settings.Toolbox$PowerMenuSettings"
+                android:exported="true"
+                android:label="@string/power_menu_title"
+                android:theme="@style/Theme.SubSettings">
+            <intent-filter>
+                <action android:name="com.evervolv.settings.POWER_MENU_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.evervolv.settings.gestures.PowerMenuActions" />
+        </activity>
+
     </application>
 </manifest>

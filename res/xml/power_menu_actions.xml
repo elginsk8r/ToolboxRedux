@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/power_menu_long_press_for_power_menu_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="power_menu_reboot"
+        android:title="@string/power_menu_reboot_title"
+        settings:controller="com.evervolv.settings.development.AdvancedRebootController"/>
+
+    <PreferenceCategory
+        android:key="power_menu_actions"
+        android:title="@string/power_menu_title">
+
+        <CheckBoxPreference
+            android:key="screenshot"
+            android:title="@string/power_menu_screenshot_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="airplane"
+            android:title="@string/power_menu_airplane_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="users"
+            android:title="@string/power_menu_users_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="bugreport"
+            android:title="@string/power_menu_bug_report_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="emergency"
+            android:title="@string/power_menu_emergency_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+
+        <CheckBoxPreference
+            android:key="devicecontrols"
+            android:title="@string/power_menu_devicecontrols_title"
+            settings:controller="com.evervolv.settings.gestures.PowerMenuActionController"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
