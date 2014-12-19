@@ -139,4 +139,14 @@
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
 
+    <!-- Power menu -->
+    <string name="power_menu_reboot_title">Enable advanced reboot</string>
+    <string name="power_menu_title">@string/mode_device_effects_title</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_users_title">User switcher</string>
+    <string name="power_menu_bug_report_title">Bug report</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
+
 </resources>

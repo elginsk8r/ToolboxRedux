@@ -23,7 +23,7 @@
         <com.android.settingslib.widget.SelectorWithWidgetPreference
             android:key="gesture_power_menu_long_press_for_power_menu"
             android:title="@string/power_menu_long_press_for_power_menu_title"
-            settings:controller="com.android.settings.gestures.LongPressPowerForPowerMenuPreferenceController"/>
+            settings:controller="com.evervolv.settings.gestures.PowerMenuPreferenceController"/>
 
         <com.android.settingslib.widget.SelectorWithWidgetPreference
             android:key="gesture_power_menu_long_press_for_assistant"
