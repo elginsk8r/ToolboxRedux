@@ -90,6 +90,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="live_display"
+        android:title="@*evervolv.platform:string/live_display_title"
+        android:order="-175"
+        settings:controller="com.evervolv.settings.display.LiveDisplayPreferenceController">
+
+        <Preference
+            android:key="live_display_mode"
+            android:title="@string/live_display_mode"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.evervolv.settings.display.LiveDisplayModePickerFragment"
+            settings:controller="com.evervolv.settings.display.LiveDisplayModePreferenceController"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/category_name_color"
         android:order="-170">
 
