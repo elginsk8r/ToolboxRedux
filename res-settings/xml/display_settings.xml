@@ -145,6 +145,13 @@
             android:title="@string/live_display_reading_mode_title"
             android:summary="@string/live_display_reading_mode_summary"
             settings:controller="com.evervolv.toolbox.display.HardwarePreferenceController"/>
+
+        <!-- Manual temperature selection -->
+        <com.evervolv.toolbox.display.DisplayTemperaturePreference
+            android:key="live_display_color_temperature"
+            android:title="@string/live_display_color_temperature_title"
+            android:dialogTitle="@string/live_display_color_temperature_title"
+            settings:controller="com.evervolv.toolbox.display.DisplayTemperaturePreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
