@@ -78,4 +78,7 @@
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Colors accurate to the DCI-P3 color space</string>
 
+    <!-- LiveDisplay Mode-->
+    <string name="live_display_mode">Display mode</string>
+
 </resources>
