@@ -54,4 +54,7 @@
     <string name="live_display_low_power_title">Reduce power consumption</string>
     <string name="live_display_low_power_summary">Adjust display for lowest power consumption without degradation</string>
 
+    <!-- LiveDisplay Mode-->
+    <string name="live_display_mode">Display mode</string>
+
 </resources>
