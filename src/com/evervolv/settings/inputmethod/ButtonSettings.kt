@@ -23,6 +23,7 @@ class ButtonSettings : DashboardFragment() {
         const val CATEGORY_MENU = "menu"
         const val CATEGORY_ASSIST = "assist"
         const val CATEGORY_APPSWITCH = "app_switch"
+        const val CATEGORY_CAMERA = "camera"
         const val CATEGORY_VOLUME = "volume"
     }
 }
