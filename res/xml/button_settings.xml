@@ -133,6 +133,30 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="camera_key"
+        android:title="@string/camera_key_title"
+        settings:controller="com.evervolv.settings.inputmethod.CameraCategoryPreferenceController">
+
+        <SwitchPreferenceCompat
+            android:key="camera_wake_screen"
+            android:title="@string/button_wake_title"
+            settings:controller="com.evervolv.settings.inputmethod.CameraKeyWakePreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="camera_sleep_on_release"
+            android:title="@string/camera_sleep_on_release_title"
+            android:summary="@string/camera_sleep_on_release_summary"
+            settings:controller="com.evervolv.settings.inputmethod.CameraKeyPreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="camera_launch"
+            android:title="@string/camera_launch_title"
+            android:summary="@string/camera_launch_summary"
+            settings:controller="com.evervolv.settings.inputmethod.CameraKeyPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="volume_keys"
         android:title="@string/volume_keys_title"
         settings:controller="com.evervolv.settings.inputmethod.VolumeCategoryPreferenceController">
