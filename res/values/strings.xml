@@ -92,6 +92,7 @@
     <string name="menu_key_title">Menu button</string>
     <string name="assist_key_title">Search button</string>
     <string name="appswitch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
     <string name="volume_keys_title">Volume buttons</string>
 
     <!-- Hardware key rebinding -->
@@ -110,5 +111,11 @@
     <string name="action_launch_camera">Launch camera</string>
     <string name="action_sleep">Turn screen off</string>
     <string name="action_split_screen">Split screen</string>
+
+    <!-- Camera key actions -->
+    <string name="camera_sleep_on_release_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="camera_launch_title">Launch camera</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
 
 </resources>

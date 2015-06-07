@@ -22,6 +22,7 @@ class KeyWakePreferenceController(
             "menu_wake_screen" -> DeviceCapabilities.canWakeUsingMenuKey(mContext)
             "assist_wake_screen" -> DeviceCapabilities.canWakeUsingAssistKey(mContext)
             "app_switch_wake_screen" -> DeviceCapabilities.canWakeUsingAppSwitchKey(mContext)
+            "camera_wake_screen" -> DeviceCapabilities.canWakeUsingCameraKey(mContext)
             "volume_wake_screen" -> DeviceCapabilities.canWakeUsingVolumeKeys(mContext)
             else -> false
         }

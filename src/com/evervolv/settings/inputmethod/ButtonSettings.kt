@@ -45,6 +45,11 @@ class ButtonSettings : DashboardFragment() {
             ),
             CategoryPreferenceController(
                 context,
+                "camera_key",
+                DeviceCapabilities.hasCameraKey(context)
+            ),
+            CategoryPreferenceController(
+                context,
                 "volume_keys",
                 DeviceCapabilities.hasVolumeKeys(context)
             ),
