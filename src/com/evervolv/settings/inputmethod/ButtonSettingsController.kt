@@ -18,10 +18,11 @@ class ButtonSettingsController(
     private val hasMenuKey = DeviceCapabilities.hasMenuKey(mContext)
     private val hasAssistKey = DeviceCapabilities.hasAssistKey(mContext)
     private val hasAppSwitchKey = DeviceCapabilities.hasAppSwitchKey(mContext)
+    private val hasCameraKey = DeviceCapabilities.hasCameraKey(mContext)
     private val hasVolumeKeys = DeviceCapabilities.hasVolumeKeys(mContext)
 
     override fun getAvailabilityStatus(): Int =
-        if (hasHomeKey || hasBackKey || hasMenuKey || hasAssistKey || hasAppSwitchKey || hasVolumeKeys) {
+        if (hasHomeKey || hasBackKey || hasMenuKey || hasAssistKey || hasAppSwitchKey || hasCameraKey || hasVolumeKeys) {
             AVAILABLE
         } else {
             UNSUPPORTED_ON_DEVICE

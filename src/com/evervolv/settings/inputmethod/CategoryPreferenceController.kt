@@ -23,6 +23,7 @@ class CategoryPreferenceController(
             ButtonSettings.CATEGORY_ASSIST -> DeviceCapabilities.hasAssistKey(mContext)
             ButtonSettings.CATEGORY_APPSWITCH -> DeviceCapabilities.hasAppSwitchKey(mContext)
             ButtonSettings.CATEGORY_VOLUME -> DeviceCapabilities.hasVolumeKeys(mContext)
+            ButtonSettings.CATEGORY_CAMERA -> DeviceCapabilities.hasCameraKey(mContext)
             else -> false
         }) {
             AVAILABLE

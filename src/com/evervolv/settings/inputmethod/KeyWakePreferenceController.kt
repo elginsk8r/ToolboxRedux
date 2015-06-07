@@ -23,6 +23,7 @@ class KeyWakePreferenceController(
             ButtonSettings.CATEGORY_MENU -> DeviceCapabilities.canWakeUsingMenuKey(mContext)
             ButtonSettings.CATEGORY_ASSIST -> DeviceCapabilities.canWakeUsingAssistKey(mContext)
             ButtonSettings.CATEGORY_APPSWITCH -> DeviceCapabilities.canWakeUsingAppSwitchKey(mContext)
+            ButtonSettings.CATEGORY_CAMERA -> DeviceCapabilities.canWakeUsingCameraKey(mContext)
             ButtonSettings.CATEGORY_VOLUME -> DeviceCapabilities.canWakeUsingVolumeKeys(mContext)
             else -> false
         }) AVAILABLE else UNSUPPORTED_ON_DEVICE
