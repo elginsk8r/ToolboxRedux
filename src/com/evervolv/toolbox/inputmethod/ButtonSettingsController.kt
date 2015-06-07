@@ -22,6 +22,7 @@ class ButtonSettingsController(
             || DeviceCapabilities.hasMenuKey(mContext)
             || DeviceCapabilities.hasAssistKey(mContext)
             || DeviceCapabilities.hasAppSwitchKey(mContext)
+            || DeviceCapabilities.hasCameraKey(mContext)
             || DeviceCapabilities.hasVolumeKeys(mContext)
         }?: UNSUPPORTED_ON_DEVICE
 }

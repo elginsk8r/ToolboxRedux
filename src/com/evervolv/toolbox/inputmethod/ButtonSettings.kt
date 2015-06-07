@@ -25,5 +25,6 @@ class ButtonSettings : DashboardFragment() {
         const val CATEGORY_ASSIST = "assist"
         const val CATEGORY_APPSWITCH = "app_switch"
         const val CATEGORY_VOLUME = "volume"
+        const val CATEGORY_CAMERA = "camera"
     }
 }
