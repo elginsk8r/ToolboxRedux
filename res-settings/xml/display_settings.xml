@@ -114,6 +114,13 @@
             settings:controller="com.android.settings.display.ColorModePreferenceController"
             settings:keywords="@string/keywords_color_mode"/>
 
+        <evervolv.preference.SelfRemovingPreference
+            android:key="display_mode"
+            android:title="@string/color_mode_title"
+            android:fragment="com.evervolv.toolbox.display.DisplayModePickerFragment"
+            settings:controller="com.evervolv.toolbox.display.DisplayModePreferenceController"
+            settings:replacesKey="color_mode"/>
+
         <Preference
             android:fragment="com.android.settings.display.ColorContrastFragment"
             android:key="color_contrast"
