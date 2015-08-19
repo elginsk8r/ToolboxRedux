@@ -16,6 +16,7 @@ import android.hardware.display.ColorDisplayManager.VENDOR_COLOR_MODE_RANGE_MIN
 import androidx.annotation.VisibleForTesting
 import com.android.settings.R
 import com.android.settings.core.BasePreferenceController
+import evervolv.hardware.HardwareManager
 
 class ColorModeExtPreferenceController(
     context: Context,
@@ -23,6 +24,7 @@ class ColorModeExtPreferenceController(
 ) : BasePreferenceController(context, key) {
 
     private val colorDisplayManager = mContext.getSystemService(ColorDisplayManager::class.java)!!
+    private val hardwareManager = HardwareManager.getInstance(mContext)
 
     private val colorModeOptions = mContext.resources.getStringArray(R.array.config_color_mode_options_strings)
     private val colorModeValues = mContext.resources.getIntArray(R.array.config_color_mode_options_values)
@@ -44,7 +46,9 @@ class ColorModeExtPreferenceController(
     )
 
     override fun getAvailabilityStatus(): Int =
-        if (colorDisplayManager.isDeviceColorManaged == true &&
+        if (hardwareManager.isSupported(HardwareManager.FEATURE_DISPLAY_MODES)) {
+            CONDITIONALLY_UNAVAILABLE
+        } else if (colorDisplayManager.isDeviceColorManaged == true &&
             !ColorDisplayManager.areAccessibilityTransformsEnabled(mContext)) {
             if (availableColorModes.isEmpty()) {
                 UNSUPPORTED_ON_DEVICE
