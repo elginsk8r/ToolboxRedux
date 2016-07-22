@@ -186,6 +186,14 @@
             android:summary="@string/display_white_balance_summary"
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
+        <!-- HSIC display color adjustments -->
+        <com.evervolv.toolbox.display.PictureAdjustmentPreference
+            android:key="picture_adjustment"
+            android:title="@string/picture_adjustment_title"
+            android:dialogTitle="@string/picture_adjustment_title"
+            android:summary="@string/picture_adjustment_summary"
+            settings:controller="com.evervolv.toolbox.display.PictureAdjustmentPreferenceController"/>
+
         <SwitchPreferenceCompat
             android:key="peak_refresh_rate"
             android:title="@string/peak_refresh_rate_title"
