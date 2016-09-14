@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/status_bar_title">
+
+    <PreferenceCategory
+        android:key="status_bar_battery"
+        android:title="@string/status_bar_battery_title"
+        settings:controller="com.evervolv.settings.display.StatusBarBatteryController">
+
+        <SwitchPreferenceCompat
+            android:key="battery_percentage"
+            android:title="@string/battery_percentage"
+            android:summary="@string/battery_percentage_description"
+            settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
