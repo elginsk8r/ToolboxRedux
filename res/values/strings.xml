@@ -62,6 +62,8 @@
 
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_system_icons_title">System icons</string>
+    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Battery indicator</string>
