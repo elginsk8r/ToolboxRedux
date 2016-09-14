@@ -6,6 +6,7 @@
 package com.evervolv.toolbox.statusbar
 
 import android.content.Context
+import android.content.Intent
 import com.android.settings.Utils
 import com.android.settings.core.BasePreferenceController
 
@@ -16,7 +17,10 @@ class StatusBarIconsController(
 
     override fun getAvailabilityStatus(): Int =
         AVAILABLE_UNSEARCHABLE.takeIf {
-            Utils.isBatteryPresent(mContext)
+            Utils.isBatteryPresent(mContext) ||
+            mContext.packageManager.queryIntentActivities(
+                Intent("com.android.settings.action.STATUS_BAR_TUNER"), 0
+            ).isNotEmpty()
         } ?: CONDITIONALLY_UNAVAILABLE
 }
 
