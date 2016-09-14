@@ -57,4 +57,13 @@
     <!-- LiveDisplay Mode-->
     <string name="live_display_mode">Display mode</string>
 
+    <!-- Status bar -->
+    <string name="status_bar_title">Status bar</string>
+
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Battery indicator</string>
+
 </resources>
