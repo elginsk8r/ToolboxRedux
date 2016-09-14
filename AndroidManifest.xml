@@ -10,6 +10,7 @@
         coreApp="true">
 
     <uses-permission android:name="evervolv.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="evervolv.permission.MANAGE_LIVEDISPLAY" />
     <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
 
     <original-package android:name="com.android.settings"/>
