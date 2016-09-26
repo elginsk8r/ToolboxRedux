@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/display_rotation_title">
+
+    <PreferenceCategory
+        android:title="@string/display_rotation_category">
+
+        <CheckBoxPreference
+            android:key="display_rotation_0"
+            android:title="@string/display_rotation_0_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_90"
+            android:title="@string/display_rotation_90_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_180"
+            android:title="@string/display_rotation_180_title" />
+
+        <CheckBoxPreference
+            android:key="display_rotation_270"
+            android:title="@string/display_rotation_270_title" />
+
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="display_rotation_footer_preference"
+        android:title="@string/external_display_change_resolution_footer_title"
+        android:selectable="false"
+        settings:searchable="false"/>
+
+</PreferenceScreen>

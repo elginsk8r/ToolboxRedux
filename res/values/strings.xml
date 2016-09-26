@@ -220,4 +220,13 @@
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
 
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Rotation Manager</string>
+    <string name="display_rotation_summary">Filter rotations allowed to the system and applications</string>
+    <string name="display_rotation_category">Available rotations</string>
+    <string name="display_rotation_0_title">@string/external_display_standard_rotation</string>
+    <string name="display_rotation_90_title">@string/external_display_rotation_90</string>
+    <string name="display_rotation_180_title">@string/external_display_rotation_180</string>
+    <string name="display_rotation_270_title">@string/external_display_rotation_270</string>
+
 </resources>
