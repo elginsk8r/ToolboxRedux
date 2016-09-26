@@ -21,6 +21,13 @@
         android:title="@string/auto_rotate_settings_primary_switch_title"
         settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
+    <Preference
+        android:key="display_rotation"
+        android:title="@string/display_rotation_title"
+        android:summary="@string/display_rotation_summary"
+        android:fragment="com.evervolv.settings.display.RotationSettings"
+        settings:controller="com.android.settings.display.RotationSettingsController" />
+
     <com.android.settingslib.widget.BannerMessagePreference
         android:key="face_rotate_permission"
         android:title="@string/adaptive_sleep_title_no_permission"
