@@ -131,4 +131,12 @@
     <string name="swap_capacitive_keys_title">Swap capacitive buttons</string>
     <string name="swap_capacitive_keys_summary">Swap the order of recents and back buttons</string>
 
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Orientation Manager</string>
+    <string name="display_rotation_summary" >Select which orientations are enabled for auto-rotation</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
 </resources>
