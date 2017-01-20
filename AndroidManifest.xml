@@ -9,8 +9,11 @@
         android:sharedUserId="android.uid.system"
         coreApp="true">
 
+    <uses-permission android:name="evervolv.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
     <uses-permission android:name="evervolv.permission.WRITE_SECURE_SETTINGS" />
+
+    <protected-broadcast android:name="com.evervolv.toolbox.gestures.UPDATE_SETTINGS" />
 
     <application android:name="com.evervolv.toolbox.PartsApplication"
             android:icon="@drawable/ic_launcher_settings"
@@ -18,6 +21,8 @@
             tools:replace="android:name">
 
         <uses-library android:name="org.apache.http.legacy" />
+
+        <activity android:name="com.evervolv.toolbox.gestures.KeyHandler" />
 
     </application>
 </manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Default action ids for a device's touchscreen gestures
+         The array should be sorted in the same order as the
+         touchscreen gestures advertised by the device's LineageHW impl. -->
+    <integer-array name="config_defaultTouchscreenGestureActions" />
+
+</resources>
