@@ -11,4 +11,9 @@
     <!-- Whether device total ram should be shown or not. -->
     <bool name="config_show_device_total_ram">true</bool>
 
+    <!-- Default action ids for a device's touchscreen gestures
+         The array should be sorted in the same order as the
+         touchscreen gestures advertised by the device's LineageHW impl. -->
+    <integer-array name="config_defaultTouchscreenGestureActions" />
+
 </resources>

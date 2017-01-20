@@ -34,5 +34,13 @@
                 android:value="com.evervolv.settings.gestures.PowerMenuActions" />
         </activity>
 
+        <receiver
+            android:name="com.evervolv.settings.gestures.TouchscreenGestureReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>

@@ -23,6 +23,13 @@
     <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:title="@string/fingerprint_swipe_for_notifications_title"
+        android:fragment="com.evervolv.settings.gestures.TouchscreenGestureSettings"
+        settings:searchable="false"
+        settings:controller="com.android.settings.gestures.TouchscreenGesturePreferenceController" />
+
+    <Preference
+        android:key="gesture_swipe_down_fingerprint_input_summary"
+        android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
