@@ -13,6 +13,8 @@ import android.util.Log
 import androidx.preference.PreferenceManager
 import evervolv.hardware.HardwareManager
 
+import com.evervolv.settings.gestures.TouchscreenGestureConstants
+
 class ToolboxBootReceiver : BroadcastReceiver() {
     private val hardwareFeatures: Map<Int, String> = mapOf(
         HardwareManager.FEATURE_KEY_SWAP to "swap_capacitive_keys",
@@ -32,6 +34,15 @@ class ToolboxBootReceiver : BroadcastReceiver() {
             hardwareFeatures.forEach { (feature, key) ->
                 if (hardware.isSupported(feature)) {
                     hardware.set(feature, sharedPreferences.getBoolean(key, false))
+                }
+            }
+            if (hardware.isSupported(HardwareManager.FEATURE_TOUCHSCREEN_GESTURES)) {
+                hardware.touchscreenGestures.let { gestures ->
+                    val actionList: IntArray = TouchscreenGestureConstants.buildActionList(context, gestures)
+                    for (gesture in gestures) {
+                        hardware.setTouchscreenGestureEnabled(gesture, actionList[gesture.id] > 0)
+                    }
+                    TouchscreenGestureConstants.sendUpdateBroadcast(context, gestures)
                 }
             }
         }
