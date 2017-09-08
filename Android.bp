@@ -19,6 +19,7 @@ android_library {
     ],
     static_libs: [
         "Settings-core",
+        "com.evervolv.platform.internal",
     ],
     plugins: ["androidx.room_room-compiler-plugin"],
 }
