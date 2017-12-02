@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2024 Paranoid Android
+     SPDX-FileCopyrightText: 2024 Evervolv
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -8,6 +9,8 @@
         package="com.android.settings"
         android:sharedUserId="android.uid.system"
         coreApp="true">
+
+    <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
 
     <original-package android:name="com.android.settings"/>
 
