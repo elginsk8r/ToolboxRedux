@@ -9,6 +9,8 @@
         android:sharedUserId="android.uid.system"
         coreApp="true">
 
+    <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
+
     <original-package android:name="com.android.settings"/>
 
     <application android:name="com.evervolv.settings.ToolboxApplication"
