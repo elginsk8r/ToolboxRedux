@@ -9,6 +9,9 @@
         android:sharedUserId="android.uid.system"
         coreApp="true">
 
+    <uses-permission android:name="evervolv.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="evervolv.permission.WRITE_SECURE_SETTINGS" />
+
     <application android:name="com.evervolv.toolbox.PartsApplication"
             android:icon="@drawable/ic_launcher_settings"
             android:theme="@style/Theme.Settings"
