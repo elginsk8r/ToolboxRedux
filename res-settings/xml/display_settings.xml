@@ -114,6 +114,12 @@
             android:title="@string/accessibility_color_contrast_title"
             settings:controller="com.android.settings.display.ContrastPreferenceController"
             settings:searchable="true"/>
+
+        <SwitchPreferenceCompat
+            android:key="display_reading_mode"
+            android:title="@string/live_display_reading_mode_title"
+            android:summary="@string/live_display_reading_mode_summary"
+            settings:controller="com.evervolv.settings.display.ReadingModePreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
