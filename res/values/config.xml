@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Whether device platform should be shown or not. -->
+    <bool name="config_show_device_platform">true</bool>
+
+    <!-- Whether device total ram should be shown or not. -->
+    <bool name="config_show_device_total_ram">true</bool>
+
+</resources>
