@@ -33,7 +33,7 @@ android_app {
     system_ext_specific: true,
     privileged: true,
     required: [
-        "privapp_whitelist_com.android.settings",
+        "privapp_whitelist_com.evervolv.settings",
         "settings-platform-compat-config",
     ],
     static_libs: [
@@ -52,3 +52,12 @@ android_app {
         "Settings",
     ],
 }
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.evervolv.settings",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "privapp_whitelist_com.evervolv.settings.xml",
+    filename_from_src: true,
+}
+
