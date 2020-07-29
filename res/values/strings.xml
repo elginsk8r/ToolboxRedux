@@ -38,4 +38,8 @@
     <string name="live_display_outdoor_mode_title">Automatic outdoor mode</string>
     <string name="live_display_outdoor_mode_summary">Increase brightness and saturation automatically under bright sunlight</string>
 
+    <!-- DC Dimming -->
+    <string name="live_display_anti_flicker_title">Anti flicker</string>
+    <string name="live_display_anti_flicker_summary">Prevent extensive flickering and reduce eye strain in low light conditions. It might degrade color accuracy and affect the way some items are displayed.</string>
+
 </resources>
