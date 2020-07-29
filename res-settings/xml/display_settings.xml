@@ -162,6 +162,12 @@
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
 
         <SwitchPreferenceCompat
+            android:key="display_anti_flicker"
+            android:title="@string/live_display_anti_flicker_title"
+            android:summary="@string/live_display_anti_flicker_summary"
+            settings:controller="com.evervolv.settings.display.AntiFlickerPreferenceController"/>
+
+        <SwitchPreferenceCompat
             android:key="show_operator_name"
             android:title="@string/show_operator_name_title"
             android:summary="@string/show_operator_name_summary"/>
