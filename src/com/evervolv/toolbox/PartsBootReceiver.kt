@@ -10,6 +10,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.UserManager
 import android.util.Log
+import androidx.preference.PreferenceManager
 import evervolv.hardware.HardwareManager
 
 import com.evervolv.toolbox.gestures.TouchscreenGestureConstants
@@ -32,6 +33,15 @@ class PartsBootReceiver : BroadcastReceiver() {
                     }
                     TouchscreenGestureConstants.sendUpdateBroadcast(context, gestures)
                 }
+            }
+
+            if (hardware.isSupported(HardwareManager.FEATURE_KEY_SWAP)) {
+                val sharedPreferences = 
+                    PreferenceManager.getDefaultSharedPreferences(context)
+                hardware.set(
+                    HardwareManager.FEATURE_KEY_SWAP,
+                    sharedPreferences.getBoolean("swap_capacitive_keys", false)
+                )
             }
         }
     }

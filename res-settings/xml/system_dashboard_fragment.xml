@@ -84,6 +84,14 @@
         settings:controller="com.evervolv.toolbox.statusbar.StatusBarSettingsController"/>
 
     <Preference
+        android:key="button_settings"
+        android:title="@string/button_settings"
+        android:icon="@drawable/ic_settings_buttons"
+        android:order="-251"
+        android:fragment="com.evervolv.toolbox.inputmethod.ButtonSettings"
+        settings:controller="com.evervolv.toolbox.inputmethod.ButtonSettingsController" />
+
+    <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
