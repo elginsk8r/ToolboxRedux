@@ -19,6 +19,12 @@
             android:summary="@string/disable_navkeys_summary"
             settings:controller="com.evervolv.settings.inputmethod.DisableNavigationBarController" />
 
+        <SwitchPreferenceCompat
+            android:key="swap_capacitive_keys"
+            android:title="@string/swap_capacitive_keys_title"
+            android:summary="@string/swap_capacitive_keys_summary"
+            settings:controller="com.evervolv.settings.inputmethod.CapacitiveKeySwapPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
