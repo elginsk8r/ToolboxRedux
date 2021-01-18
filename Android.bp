@@ -20,6 +20,7 @@ android_library {
     static_libs: [
         "Settings-core",
         "com.evervolv.platform.internal",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
     plugins: ["androidx.room_room-compiler-plugin"],
 }
