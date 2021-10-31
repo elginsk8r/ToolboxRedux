@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Evervolv
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- avatar_length + avatar_margin_top -->
+    <dimen name="homepage_title_margin_top">104dp</dimen>
+
+</resources>
