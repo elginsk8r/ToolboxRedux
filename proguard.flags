@@ -1,0 +1,7 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+
+-include ../../../packages/apps/Settings/proguard.flags
+
+# Proguard rules not owned by core Settings
+-keep class com.evervolv.** { *; }
