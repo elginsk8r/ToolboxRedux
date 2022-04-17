@@ -1,0 +1,71 @@
+//
+// SPDX-FileCopyrightText: 2021-2022 StatixOS
+// SPDX-FileCopyrightText: 2024 Paranoid Android
+// SPDX-License-Identifier: Apache-2.0
+//
+
+package {
+    default_applicable_licenses: ["packages_apps_EVSettings_license"],
+}
+
+license {
+    name: "packages_apps_EVSettings_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+android_library {
+    name: "EVSettings-res",
+    resource_dirs: [
+        "res",
+    ],
+    use_resource_processor: true,
+}
+
+android_library {
+    name: "EVSettings-core",
+    platform_apis: true,
+
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
+    static_libs: [
+        "Settings-core",
+        "EVSettings-res",
+    ],
+    plugins: ["androidx.room_room-compiler-plugin"],
+}
+
+android_app {
+    name: "EVSettings",
+    defaults: ["platform_app_defaults"],
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    privileged: true,
+    required: [
+        "privapp_whitelist_com.android.settings",
+        "settings-platform-compat-config",
+    ],
+    static_libs: [
+        "EVSettings-core",
+    ],
+    use_resource_processor: true,
+    uses_libs: ["org.apache.http.legacy"],
+    optimize: {
+        proguard_flags_files: [
+            ":Settings_proguard_flags",
+            "proguard.flags",
+        ],
+    },
+    overrides: [
+        "EVToolbox",
+        "Settings",
+    ],
+}
