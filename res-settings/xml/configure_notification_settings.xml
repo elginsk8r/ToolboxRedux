@@ -228,5 +228,12 @@
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
 
+        <com.android.settingslib.PrimarySwitchPreference
+            android:fragment="com.evervolv.toolbox.notification.EdgeLightSettings"
+            android:key="notifications_edge_light"
+            android:order="29"
+            android:title="@string/notifications_edge_light_title"
+            settings:controller="com.evervolv.toolbox.notification.EdgeLightPreferenceController"/>
+
     </PreferenceCategory>
 </PreferenceScreen>

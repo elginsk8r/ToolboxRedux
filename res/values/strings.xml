@@ -229,4 +229,19 @@
     <string name="display_rotation_180_title">@string/external_display_rotation_180</string>
     <string name="display_rotation_270_title">@string/external_display_rotation_270</string>
 
+    <!-- Edge light notifications -->
+    <string name="notifications_edge_light_title">Edge light pulse</string>
+    <string name="notifications_edge_light_footer_title">When in use, notifications or always-on display will light up the side edges of the screen</string>
+    <string name="notifications_edge_light_enable_title">Use edge light</string>
+    <string name="notifications_edge_light_trigger_on_pulse_title">Pulse while dozing</string>
+    <string name="notifications_edge_light_trigger_on_pulse_summary">Show animations during ambient display, even without notifications</string>
+    <string name="notifications_edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="notifications_edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="notifications_edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="notifications_edge_light_color_mode_title">Choose pulse color</string>
+    <string name="notifications_edge_light_color_mode_default">Follow system theme</string>
+    <string name="notifications_edge_light_color_mode_wallpaper">Extract from wallpaper</string>
+    <string name="notifications_edge_light_color_mode_user">Use personal color</string>
+    <string name="notifications_edge_light_user_color">Select personal color</string>
+
 </resources>
