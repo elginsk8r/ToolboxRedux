@@ -13,7 +13,10 @@ android_library {
         "src/**/*.java",
         "src/**/*.kt",
     ],
-    resource_dirs: ["res"],
+    resource_dirs: [
+        "res",
+        "res-settings",
+    ],
     static_libs: [
         "Settings-core",
         "com.evervolv.platform.internal",
