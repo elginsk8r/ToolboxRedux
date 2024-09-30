@@ -8,6 +8,7 @@ android_library {
     name: "EVSettings-res",
     resource_dirs: [
         "res",
+        "res-settings",
     ],
     use_resource_processor: true,
 }
