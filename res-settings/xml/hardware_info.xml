@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2019 The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/model_info"
+    settings:keywords="@string/keywords_model_and_hardware">
+
+    <!-- Model -->
+    <Preference
+        android:key="hardware_info_device_model"
+        android:title="@string/model_info"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- SerialNumber -->
+    <Preference
+        android:key="hardware_info_device_serial"
+        android:title="@string/status_serial_number"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- Hardware revision -->
+    <Preference
+        android:key="hardware_info_device_revision"
+        android:title="@string/hardware_revision"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- Manufactured year -->
+    <Preference
+        android:key="hardware_info_manufactured_year"
+        android:title="@string/manufactured_year"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.ManufacturedYearPreferenceController"
+        settings:enableCopying="true"/>
+
+</PreferenceScreen>
